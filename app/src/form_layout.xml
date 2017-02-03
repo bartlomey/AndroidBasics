@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+
+        <TextView
+            android:text="Wpisz dane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView15"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="imię"
+            android:ems="10"
+            android:layout_marginTop="36dp"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp"
+            android:id="@+id/editText3"
+            android:text="e-mail" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText4"
+            tools:text="haslo"
+            android:text="haslo"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/button"
+            android:layout_below="@+id/editText4"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:animationCache="false">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginTop="15dp"
+            android:id="@+id/imageView2"
+            android:layout_centerInParent="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            android:text="Potwierdź"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/textView47"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Załóż konto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView47"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>
